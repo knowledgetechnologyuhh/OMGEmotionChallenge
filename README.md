@@ -34,10 +34,11 @@ The dataset is separated into the following files:
 
 - omg_TrainVideos.csv
 - omg_ValidationVideos.csv
-- DetailedAnnotations (You will receive this data when registering for the challenge)
-- Transcripts (You will receive this data when registering for the challenge)
+- DetailedAnnotations 
+- omg_TrainTranscripts.csv 
+- omg_TestTranscripts.csv
 
-Each of the CSV files contain the following information:
+Each of the data CSV files contain the following information:
 
 
 link: The link to access the youtube video
@@ -49,7 +50,14 @@ arousal: the calculated goldstandard of the arousal
 valence: the calculated goldstandard of the valence
 emotionMaxVote: the resulting categorical emotion from voting over all annotations
 
-For the OMG-Emotion challenge, we will compute the arousal/valence value of a model with the goldstandard of the test set. The categorical emotion will not be used for evaluating the model, but could be usefull when designing or training your model.
+the transcripts csvs contain the following information:
+
+link: The link to access the youtube video
+video: the video-id, used to associate the video with the annotations
+utterance: the utterance name, used to associate the video with the annotations
+transcript: The transcript of the audio from each video
+
+We compute the arousal/valence value of a model with the goldstandard of the test set. The categorical emotion will not be used for evaluating the model, but could be usefull when designing or training your model.
 
 The DetailedAnnotations folder contains all the annotations for each utterance. Each annotation was made when taking into consideration the video as part of a sequence, so it could be useful to use this additional information when designing your 
 models.
@@ -61,7 +69,7 @@ The Transcripts folder contains all the transcripts for each of the utterance in
 We provide the following scripts:
 
 - prepare_data.py: a script used to read, download, cut and organize the dataset.
-- calculateEvaluationCCC.py: a script used to calculate the CCC of the output of a model and the validation set. The file with the model's output must be a CSV file containng the following information: 
+- calculateEvaluationCCC.py: a script used to calculate the Correlation Concordance Coeficient (CCC) of the output of a model and the validation set. The file with the model's output must be a CSV file containng the following information: 
 
 ```
 video, utterance, arousal, valence
