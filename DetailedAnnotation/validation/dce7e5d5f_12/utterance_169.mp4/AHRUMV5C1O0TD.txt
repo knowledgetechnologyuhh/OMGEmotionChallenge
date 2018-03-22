@@ -1,0 +1,2 @@
+arousal,valence,emotion
+78.6,93.5,Disgust
