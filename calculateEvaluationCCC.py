@@ -40,9 +40,9 @@ def getUtterancesArousalAndValence(readingFile, videoName, isFileValidation=True
                     valence = row[6]
                 else:
 
-                    video = row[3]
-                    arousal = row[5]
-                    valence = row[6]
+                    video = row[0]
+                    arousal = row[2]
+                    valence = row[3]
 
                 if video == videoName:
                     arousals.append(float(arousal))
