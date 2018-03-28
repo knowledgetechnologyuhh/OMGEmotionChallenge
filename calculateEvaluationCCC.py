@@ -80,7 +80,7 @@ def calculateCCC(validationFile, modelOutputFile):
                     validationArousal,validationValence = getUtterancesArousalAndValence(validationFile, validationVideo)
                     modelArousal, modelValence = getUtterancesArousalAndValence(modelOutputFile, validationVideo)
                     cccArousal.append(ccc(validationArousal,modelArousal))
-                    cccValence.append(ccc(validationArousal, modelArousal))
+                    cccValence.append(ccc(validationValence, modelValence))
 
                     lastVideo = validationVideo
 
