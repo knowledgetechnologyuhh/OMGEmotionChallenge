@@ -57,7 +57,14 @@ video: the video-id, used to associate the video with the annotations
 utterance: the utterance name, used to associate the video with the annotations
 transcript: The transcript of the audio from each video
 
-We compute the arousal/valence value of a model with the goldstandard of the test set. The categorical emotion will not be used for evaluating the model, but could be usefull when designing or training your model.
+We compute the arousal/valence value of a model with the goldstandard of the test set. The categorical emotion will not be used for evaluating the model, but could be usefull when designing or training your model. The categorical emotion is encoded as follows: 
+- 0 -  Anger
+- 1 - Disgust 
+- 2 - Fear 
+- 3 - Happy 
+- 4 - Neutral 
+- 5 - Sad 
+- 6 - Surprise
 
 The DetailedAnnotations folder contains all the annotations for each utterance. Each annotation was made when taking into consideration the video as part of a sequence, so it could be useful to use this additional information when designing your 
 models.
