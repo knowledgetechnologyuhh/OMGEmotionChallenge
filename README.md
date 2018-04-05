@@ -74,13 +74,14 @@ The Transcripts folder contains all the transcripts for each of the utterance in
 **Baselines**
 
 To serve a baseline for this challenge, we used three different modesl: one for each modality. 
-The vision baseline was made with an updated version of the Face channel [1] pre-trained on the FER+ dataset.
 
-We calculate the Congruence Correlation Coeficient (CCC) and Mean-Squared Error (MSE) for both arousal and valence of the validation set.
+The vision baseline was made with an updated version of the Face channel [1] pre-trained on the FER+ dataset and fine-tuned with 10 randomly selected faces of each training utterance.
+
+We calculate the Congruence Correlation Coeficient (CCC) and Mean-Squared Error (MSE) for both arousal and valence of the validation set only.
 
 | Modality  | CCC Arousal | CCC Valence | MSE Arousal | MSE Valence | 
 | ------------- | ------------- |------------- |------------- |------------- |
-| Vision [1]   | 0.06  | 0.23 | 0.054 | 0.11 |
+| Vision [1]   | 0.12  | 0.23 | 0.053 | 0.12 |
 
 [1] Barros, P., & Wermter, S. (2016). Developing crossmodal expression recognition based on a deep neural model. Adaptive behavior, 24(5), 373-396.
 
