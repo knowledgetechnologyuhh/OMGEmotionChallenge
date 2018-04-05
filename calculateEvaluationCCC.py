@@ -7,94 +7,62 @@ import sys
 
 from scipy.stats import pearsonr
 import numpy
+import pandas
+
+
+def mse(y_true, y_pred):
+    from sklearn.metrics import mean_squared_error
+    return mean_squared_error(y_true,y_pred)
+
+def f1(y_true, y_pred):
+    from sklearn.metrics import f1_score
+    label = [0,1,2,3,4,5,6]
+    return f1_score(y_true,y_pred,labels=label,average="micro")
 
 def ccc(y_true, y_pred):
     true_mean = numpy.mean(y_true)
+    true_variance = numpy.var(y_true)
     pred_mean = numpy.mean(y_pred)
+    pred_variance = numpy.var(y_pred)
+
     rho,_ = pearsonr(y_pred,y_true)
+
     std_predictions = numpy.std(y_pred)
+
     std_gt = numpy.std(y_true)
+
 
     ccc = 2 * rho * std_gt * std_predictions / (
         std_predictions ** 2 + std_gt ** 2 +
         (pred_mean - true_mean) ** 2)
 
-    return ccc
-
-def getUtterancesArousalAndValence(readingFile, videoName, isFileValidation=True):
-
-    arousals = []
-    valences = []
-
-    foundVideo = False
-    with open(readingFile, 'rb') as csvfile:
-
-        spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
-        rowNumber = 0
-        for row in spamreader:
-            if rowNumber > 0:
-
-                if isFileValidation:
-                    video = row[3]
-                    arousal = row[5]
-                    valence = row[6]
-                else:
-
-                    video = row[0]
-                    arousal = row[2]
-                    valence = row[3]
-
-                if video == videoName:
-                    arousals.append(float(arousal))
-                    valences.append(float(valence))
-                    foundVideo = True
-
-                elif foundVideo:
-                    break
-
-                else: foundVideo = False
-
-            rowNumber = rowNumber+1
-
-    return (arousals,valences)
+    return ccc, rho
 
 
 
 def calculateCCC(validationFile, modelOutputFile):
 
 
-    cccArousal = []
-    cccValence = []
+    dataY = pandas.read_csv(validationFile, header=0, sep=",")
 
-    lastVideo = "none"
-    with open(validationFile, 'rb') as csvfile:
+    dataYPred = pandas.read_csv(modelOutputFile, header=0, sep=",")
 
-        spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
-        rowNumber = 0
-        for row in spamreader:
-            if rowNumber > 0:
+    dataYArousal = dataY["arousal"]
+    dataYValence = dataY["valence"]
+    dataYPredArousal = dataYPred["arousal"]
+    dataYPredValence = dataYPred["valence"]
 
-                validationVideo = row[3]
-                if lastVideo == "none" or not lastVideo == validationVideo:
+    arousalCCC, acor = ccc(dataYArousal, dataYPredArousal)
+    arousalmse = mse(dataYArousal, dataYPredArousal)
+    valenceCCC, vcor = ccc(dataYValence, dataYPredValence)
+    valencemse = mse(dataYValence, dataYPredValence)
 
-                    validationArousal,validationValence = getUtterancesArousalAndValence(validationFile, validationVideo)
-                    modelArousal, modelValence = getUtterancesArousalAndValence(modelOutputFile, validationVideo)
-                    cccArousal.append(ccc(validationArousal,modelArousal))
-                    cccValence.append(ccc(validationValence, modelValence))
-
-                    lastVideo = validationVideo
-
-            rowNumber = rowNumber+1
-
-
-    cccArousal = numpy.array(cccArousal)
-    cccValence = numpy.array(cccValence)
-    print ("CCC Arousals:", cccArousal)
-    print ("CCC Valences:", cccValence)
-
-    print ("Mean CCC Arousal:", cccArousal.mean())
-    print ("Mean CCC Valence:", cccValence.mean())
-
+    print ("Arousal CCC: ", arousalCCC)
+    print  ("Arousal Pearson Cor: ", acor)
+    print ("Arousal MSE: ", arousalmse)
+    print ("Valence CCC: ", valenceCCC)
+    print ("Valence cor: ", vcor)
+    print ("Valence MSE: ", valencemse)
 
 
 if __name__ == "__main__":
