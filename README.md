@@ -111,9 +111,10 @@ It is important to note that the order of the videos and utterances present in t
 
 Important dates: 
 - Publishing of training and validation data with annotations: March 14, 2018. 
-- Publishing of the test data, and opening of the online submission: April 11, 2018.
-- Closing of the submission portal: April 13, 2018. 
-- Announcement of the winner through the submission portal: April 18, 2018.
+- Publishing of the test data, and opening of the online submission: April 27, 2018.
+- Closing of the submission portal (Code and Results): April 30, 2018. 
+- Closing of the submission portal (Paper): May 03, 2018. 
+- Announcement of the winner through the submission portal: May 04, 2018.
 
 
 To participate, please send us an email to barros@informatik.uni-hamburg.de with the title "OMG-Emotion Recognition Team Registration". This e-mail must contain the following information: 
@@ -122,7 +123,7 @@ To participate, please send us an email to barros@informatik.uni-hamburg.de with
 - Affiliation
 
 Each team can have a maximum of 5 participants. You will receive from us the access to the dataset and all the important information about how to train and evaluate your models. 
-For the final submission, each team will have to send us a .csv file containing the final arousal/valence values for each of the utterances on the test dataset. We also request a link to a GitHub repository where your solution must be stored, and a link to an ArXiv paper with 4-6 pages describing your model and results. The best papers will be invited to submit their detailed research to a journal yet to be specified. Also, the best participating teams will hold an oral presentation about their solution during the WCCI/IJCNN 2018 conference.
+For the final submission, each team will have to send us a .csv file containing the final arousal/valence values for each of the utterances on the test dataset. We also request a link to a GitHub repository where your solution must be stored, and a link to an ArXiv paper with 2-4 pages describing your model and results. The best papers will be invited to submit their detailed research to a journal yet to be specified. Also, the best participating teams will hold an oral presentation about their solution during the WCCI/IJCNN 2018 conference.
 
 **License**
 
