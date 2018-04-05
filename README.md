@@ -79,7 +79,7 @@ The vision baseline was made with an updated version of the Face channel [1] pre
 We calculate the Congruence Correlation Coeficient (CCC) and Mean-Squared Error (MSE) for both arousal and valence of the validation set.
 
 | Modality  | CCC Arousal | CCC Valence | MSE Arousal | MSE Valence | 
-| ------------- | ------------- |------------- |
+| ------------- | ------------- |------------- |------------- |------------- |
 | Vision [1]   | 0.06  | 0.23 | 0.054 | 0.11 |
 
 [1] Barros, P., & Wermter, S. (2016). Developing crossmodal expression recognition based on a deep neural model. Adaptive behavior, 24(5), 373-396.
@@ -93,7 +93,7 @@ We provide the following scripts:
 - calculateEvaluationCCC.py: a script used to calculate the Correlation Concordance Coeficient (CCC) of the output of a model and the validation set. The file with the model's output must be a CSV file containng the following information: 
 
 ```
-video, utterance, arousal, valence
+video,utterance,arousal,valence
 74de88564,utterance_1.mp4,0.05738688939330001,0.115515408794,
 74de88564,utterance_2.mp4,0.05738688939330001,0.119515408794,
 74de88564,utterance_3.mp4,0.05738688939330001,0.2122515408794,
