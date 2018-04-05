@@ -81,7 +81,7 @@ We calculate the Congruence Correlation Coeficient (CCC) and Mean-Squared Error 
 
 | Modality  | CCC Arousal | CCC Valence | MSE Arousal | MSE Valence | 
 | ------------- | ------------- |------------- |------------- |------------- |
-| Vision [1]   | 0.12  | 0.23 | 0.053 | 0.12 |
+| Vision [1]   | 0.13  | 0.27 | 0.054 | 0.132 |
 
 [1] Barros, P., & Wermter, S. (2016). Developing crossmodal expression recognition based on a deep neural model. Adaptive behavior, 24(5), 373-396.
 
