@@ -85,6 +85,7 @@ We calculate the Congruence Correlation Coeficient (CCC) and Mean-Squared Error 
 | ------------- | ------------- |------------- |------------- |------------- |
 | Vision - Face Channel [1]   | 0.12  | 0.23 | 0.053 | 0.12 |
 | Audio - Audio Channel [1]   | 0.08  | 0.10 | 0.048 | 0.12 |
+| Language   | 0.05  | 0.20 | 0.062 | 0.123 |
 
 [1] Barros, P., & Wermter, S. (2016). Developing crossmodal expression recognition based on a deep neural model. Adaptive behavior, 24(5), 373-396.
 
