@@ -79,13 +79,25 @@ The vision baseline was made with an updated version of the Face channel [1] pre
 
 The audio baseline was made with an updated version of the Audio channel [1] pre-trained on the RAVDESS.
 
+The baseline text classifier is trained on the OMG training data and
+uses the word2vec Google News corpus vectors as pretrained word
+embeddings. The model feeds the transcribed sentences as sequences of
+word embeddings into a 1D CNN with 128 filters and a kernel size of 3.
+
+The CNN is followed by a global max pooling layer and a fully connected
+layer with 500 units, ending finally in a single neuron with a sigmoidal
+activation function that predicts the valence and arousal levels of the
+input utterance. The CNN and fully connected layer use a ReLU activation
+and a dropout factor of 0.2 is applied after the word embedding and
+fully connected layer.
+
 We calculate the Congruence Correlation Coeficient (CCC) and Mean-Squared Error (MSE) for both arousal and valence of the validation set only.
 
 | Modality  | CCC Arousal | CCC Valence | MSE Arousal | MSE Valence | 
 | ------------- | ------------- |------------- |------------- |------------- |
 | Vision - Face Channel [1]   | 0.12  | 0.23 | 0.053 | 0.12 |
 | Audio - Audio Channel [1]   | 0.08  | 0.10 | 0.048 | 0.12 |
-| Language   | 0.05  | 0.20 | 0.062 | 0.123 |
+| Text   | 0.05  | 0.20 | 0.062 | 0.123 |
 
 [1] Barros, P., & Wermter, S. (2016). Developing crossmodal expression recognition based on a deep neural model. Adaptive behavior, 24(5), 373-396.
 
