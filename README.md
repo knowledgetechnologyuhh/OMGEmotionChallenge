@@ -99,7 +99,7 @@ We calculate the Congruence Correlation Coeficient (CCC) and Mean-Squared Error 
 | ------------- | ------------- |------------- |------------- |------------- |
 | Vision - Face Channel [1]   | 0.12  | 0.23 | 0.053 | 0.12 |
 | Audio - Audio Channel [1]   | 0.08  | 0.10 | 0.048 | 0.12 |
-| Audio - OpenSime Features | 0.15  | 0.21 | 0.045 | 0.10 |
+| Audio - OpenSmile Features | 0.15  | 0.21 | 0.045 | 0.10 |
 | Text   | 0.05  | 0.20 | 0.062 | 0.123 |
 
 
