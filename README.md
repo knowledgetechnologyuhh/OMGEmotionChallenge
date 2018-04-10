@@ -77,7 +77,9 @@ To serve a baseline for this challenge, we used three different modesl: one for 
 
 The vision baseline was made with an updated version of the Face channel [1] pre-trained on the FER+ dataset and fine-tuned with 10 randomly selected faces of each training utterance.
 
-The audio baseline was made with an updated version of the Audio channel [1] pre-trained on the RAVDESS.
+We have two audio baselines, the first one was made with an updated version of the Audio channel [1] pre-trained on the RAVDESS.
+
+The second one was made by using the opensmile library to extract auditory features and a Suport Vector Machine (SVM) to classify them.
 
 The baseline text classifier is trained on the OMG training data and
 uses the word2vec Google News corpus vectors as pretrained word
@@ -97,7 +99,9 @@ We calculate the Congruence Correlation Coeficient (CCC) and Mean-Squared Error 
 | ------------- | ------------- |------------- |------------- |------------- |
 | Vision - Face Channel [1]   | 0.12  | 0.23 | 0.053 | 0.12 |
 | Audio - Audio Channel [1]   | 0.08  | 0.10 | 0.048 | 0.12 |
+| Audio - OpenSime Features | 0.15  | 0.21 | 0.045 | 0.10 |
 | Text   | 0.05  | 0.20 | 0.062 | 0.123 |
+
 
 [1] Barros, P., & Wermter, S. (2016). Developing crossmodal expression recognition based on a deep neural model. Adaptive behavior, 24(5), 373-396.
 
