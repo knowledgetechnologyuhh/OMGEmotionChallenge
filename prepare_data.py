@@ -3,15 +3,18 @@ import argparse
 import os
 import sys
 import subprocess
+import datetime
 
 
 def get_formatted_time(seconds):
-    microsecond = int((seconds - int(seconds)) * 1000 * 1000)
-    int_seconds = int(seconds)
-    hour = int_seconds // 3600
-    minute = (int_seconds - hour * 3600) // 60
-    second = int_seconds - hour * 3600 - minute * 60
-    return "{:02}:{:02}:{:02}.{:03}".format(hour, minute, second, microsecond)
+    return datetime.timedelta(seconds=seconds)
+
+#    microsecond = int((seconds - int(seconds)) * 1000 * 1000)
+#    int_seconds = int(seconds)
+#    hour = int_seconds // 3600
+#    minute = (int_seconds - hour * 3600) // 60
+#    second = int_seconds - hour * 3600 - minute * 60
+#    return "{:02}:{:02}:{:02}.{:03}".format(hour, minute, second, microsecond)
 
 def dl_youtube(link, target_file):
     p = subprocess.Popen(["youtube-dl",
