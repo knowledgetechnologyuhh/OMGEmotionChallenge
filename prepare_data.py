@@ -7,7 +7,7 @@ import datetime
 
 
 def get_formatted_time(seconds):
-    return datetime.timedelta(seconds=seconds)
+    return str(datetime.timedelta(seconds=seconds))
 
 #    microsecond = int((seconds - int(seconds)) * 1000 * 1000)
 #    int_seconds = int(seconds)
