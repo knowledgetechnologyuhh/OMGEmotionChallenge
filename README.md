@@ -134,8 +134,8 @@ Important dates:
 - Publishing of training and validation data with annotations: March 14, 2018. 
 - Publishing of the test data, and opening of the online submission: April 27, 2018.
 - Closing of the submission portal (Code and Results): April 30, 2018. 
-- Closing of the submission portal (Paper): May 03, 2018. 
-- Announcement of the winner through the submission portal: May 04, 2018.
+- Closing of the submission portal (Paper): May 04, 2018. 
+- Announcement of the winner through the submission portal: May 07, 2018.
 
 
 To participate, please send us an email to barros@informatik.uni-hamburg.de with the title "OMG-Emotion Recognition Team Registration". This e-mail must contain the following information: 
