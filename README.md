@@ -10,6 +10,11 @@ Henrique Siqueira, Hamburg University, Germany </br>
 Alexander Sutherland, Hamburg University, Germany </br>
 Stefan Wermter, Hamburg University, Germany </br>
 
+** Final Results **
+
+https://www2.informatik.uni-hamburg.de/wtm/OMG-EmotionChallenge/
+
+
 **OMG Emotion Dataset** 
 
 Our One-Minute-Gradual Emotion Dataset (OMG-Emotion Dataset) is composed of 420 relatively long emotion videos with an average length of 1 minute, collected from a variety of Youtube channels. The videos were selected automatically based on specific search terms related to the term monologue. Using monologue videos allowed for different emotional behaviors  to be presented in one context that changed gradually over time.. Videos were separated into clips based on utterances, and each utterance was annotated by at least five independent subjects using the Amazon Mechanical Turk tool. To maintain the contextual information for each video, each annotator watched the clips of a video in sequence and had to annotate each video using an arousal/valence scale.
