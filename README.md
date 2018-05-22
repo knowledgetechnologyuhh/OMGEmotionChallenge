@@ -133,7 +133,7 @@ video,utterance,arousal,valence
 
 It is important to note that the order of the videos and utterances present in this file **must** be the same as the order of the videos and utterances on the  omg_ValidationVideos.csv.
 
-**How to participate**
+**OMG-Emotion Recognition Challenge 2018**
 
 Important dates: 
 - Publishing of training and validation data with annotations: March 14, 2018. 
@@ -161,9 +161,12 @@ This corpus is distributed under the Creative Commons CC BY-NC-SA 3.0 DE license
 - To not provide the corpus to any second parties.
 
 
+**Referencese**
+Barros, P., Churamani, N., Lakomkin, E., Siqueira, H., Sutherland, A., & Wermter, S. (2018). The omg-emotion behavior dataset. arXiv preprint arXiv:1803.05434.
+
 **More information** 
 
 - You can access a detailed information about an early version of the dataset here: https://arxiv.org/abs/1803.05434
-- You can also find usefull scripts for processing the dataset here: https://github.com/knowledgetechnologyuhh/OMGEmotionChallenge
+- You can also find usefull information here: https://www2.informatik.uni-hamburg.de/wtm/OMG-EmotionChallenge/
 
 For more informations: barros@informatik.uni-hamburg.de
