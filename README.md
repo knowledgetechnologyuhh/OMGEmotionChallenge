@@ -10,7 +10,7 @@ Henrique Siqueira, Hamburg University, Germany </br>
 Alexander Sutherland, Hamburg University, Germany </br>
 Stefan Wermter, Hamburg University, Germany </br>
 
-**Final Results**
+**Final Results and Leaderboards**
 
 https://www2.informatik.uni-hamburg.de/wtm/OMG-EmotionChallenge/
 
