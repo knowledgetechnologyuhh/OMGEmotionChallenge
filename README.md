@@ -60,7 +60,7 @@ the transcripts csvs contain the following information:
 link: The link to access the youtube video
 video: the video-id, used to associate the video with the annotations
 utterance: the utterance name, used to associate the video with the annotations
-transcript: The transcript of the audio from each video
+transcript: The transcript of the audio from each videoHow to participate
 
 We compute the arousal/valence value of a model with the goldstandard of the test set. The categorical emotion will not be used for evaluating the model, but could be usefull when designing or training your model. The categorical emotion is encoded as follows: 
 - 0 -  Anger
@@ -161,7 +161,8 @@ This corpus is distributed under the Creative Commons CC BY-NC-SA 3.0 DE license
 - To not provide the corpus to any second parties.
 
 
-**Referencese**
+**References**
+
 Barros, P., Churamani, N., Lakomkin, E., Siqueira, H., Sutherland, A., & Wermter, S. (2018). The omg-emotion behavior dataset. arXiv preprint arXiv:1803.05434.
 
 **More information** 
