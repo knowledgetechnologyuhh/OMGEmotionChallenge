@@ -1,6 +1,6 @@
 # OMGEmotionChallenge
 
-Website: https://www2.informatik.uni-hamburg.de/wtm/OMG-EmotionChallenge/
+Website: https://www2.informatik.uni-hamburg.de/wtm/omgchallenges/omg_emotion.html
 
 **Organization**
 
@@ -12,7 +12,7 @@ Stefan Wermter, Hamburg University, Germany </br>
 
 **Final Results and Leaderboards**
 
-https://www2.informatik.uni-hamburg.de/wtm/OMG-EmotionChallenge/
+https://www2.informatik.uni-hamburg.de/wtm/omgchallenges/omg_emotion.html
 
 
 **OMG Emotion Dataset** 
