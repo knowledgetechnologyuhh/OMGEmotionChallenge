@@ -1,2 +1,0 @@
-arousal,valence,emotion
-51.7,51.1,Disgust

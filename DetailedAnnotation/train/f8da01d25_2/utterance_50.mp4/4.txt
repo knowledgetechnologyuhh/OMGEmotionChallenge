@@ -1,2 +1,0 @@
-arousal,valence,emotion
-65.6,56.3,Surprise

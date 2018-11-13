@@ -1,2 +1,0 @@
-arousal,valence,emotion
-12.6,24.6,Sad

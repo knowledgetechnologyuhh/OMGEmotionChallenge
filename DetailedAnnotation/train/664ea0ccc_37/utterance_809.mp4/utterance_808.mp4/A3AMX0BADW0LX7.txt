@@ -1,0 +1,2 @@
+arousal,valence,emotion
+38.2,-21.9,Anger

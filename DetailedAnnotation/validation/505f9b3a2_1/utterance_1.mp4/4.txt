@@ -1,2 +1,0 @@
-arousal,valence,emotion
-62.2,43.1,Happy

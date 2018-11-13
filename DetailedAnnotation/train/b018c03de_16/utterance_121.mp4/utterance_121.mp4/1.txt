@@ -1,0 +1,2 @@
+arousal,valence,emotion
+97.0,96.1,Neutral

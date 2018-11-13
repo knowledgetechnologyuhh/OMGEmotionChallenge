@@ -1,0 +1,2 @@
+arousal,valence,emotion
+27.7,20.8,Fear

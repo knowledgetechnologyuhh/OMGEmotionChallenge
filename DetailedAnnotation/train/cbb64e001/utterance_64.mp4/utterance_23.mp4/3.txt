@@ -1,0 +1,2 @@
+arousal,valence,emotion
+27.4,-14.0,Neutral
