@@ -163,8 +163,23 @@ This corpus is distributed under the Creative Commons CC BY-NC-SA 3.0 DE license
 
 **References**
 
-Barros, P., Churamani, N., Lakomkin, E., Siqueira, H., Sutherland, A., & Wermter, S. (2018). The omg-emotion behavior dataset. arXiv preprint arXiv:1803.05434.
+P. Barros, N. Churamani, E. Lakomkin, H. Siqueira, A. Sutherland and S. Wermter, "The OMG-Emotion Behavior Dataset", 2018 International Joint Conference on Neural Networks (IJCNN), Rio de Janeiro, Brazil, 2018, pp. 1408--1414. 
 
+<b>DOI:</b> [10.1109/IJCNN.2018.8489099](https://doi.org/10.1109/IJCNN.2018.8489099)
+
+```
+@inproceedings{Barros2018OMG, 
+author={Barros, Pablo and Churamani, Nikhil and Lakomkin, Egor and Sequeira, Henrique and Sutherland, Alexander and Wermter, Stefan}, 
+booktitle={2018 International Joint Conference on Neural Networks (IJCNN)}, 
+title={{The OMG-Emotion Behavior Dataset}}, 
+year={2018}, 
+moth={July},
+organization={IEEE},
+pages={1408--1414},
+location={Rio de Janeiro, Brazil},
+doi={10.1109/IJCNN.2018.8489099}
+}
+```
 **More information** 
 
 - You can access a detailed information about an early version of the dataset here: https://arxiv.org/abs/1803.05434
