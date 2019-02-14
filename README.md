@@ -160,6 +160,10 @@ This corpus is distributed under the Creative Commons CC BY-NC-SA 3.0 DE license
 - To use the corpus for research purpose only.
 - To not provide the corpus to any second parties.
 
+**Access do the dataset**
+
+If you are having problems downloading the videos of the dataset, please send an e-mail to: barros@informatik.uni-hamburg.de
+
 
 **References**
 
