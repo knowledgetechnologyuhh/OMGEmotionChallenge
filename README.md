@@ -159,6 +159,7 @@ This corpus is distributed under the Creative Commons CC BY-NC-SA 3.0 DE license
 - The references are provided at the end of this page.
 - To use the corpus for research purpose only.
 - To not provide the corpus to any second parties.
+- To delete the dataset as soon as you finish using it.
 
 **Access do the dataset**
 
