@@ -151,6 +151,8 @@ To participate, please send us an email to barros@informatik.uni-hamburg.de with
 Each team can have a maximum of 5 participants. You will receive from us the access to the dataset and all the important information about how to train and evaluate your models. 
 For the final submission, each team will have to send us a .csv file containing the final arousal/valence values for each of the utterances on the test dataset. We also request a link to a GitHub repository where your solution must be stored, and a link to an ArXiv paper with 2-4 pages describing your model and results. The best papers will be invited to submit their detailed research to a journal yet to be specified. Also, the best participating teams will hold an oral presentation about their solution during the WCCI/IJCNN 2018 conference.
 
+Final Results: https://www2.informatik.uni-hamburg.de/wtm/omgchallenges/omg_emotion2018_results2018.html
+
 **License**
 
 This corpus is distributed under the Creative Commons CC BY-NC-SA 3.0 DE license. If you use this corpus, you have to agree with the following itens:
