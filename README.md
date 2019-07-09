@@ -4,7 +4,7 @@ Website: https://www2.informatik.uni-hamburg.de/wtm/omgchallenges/omg_emotion.ht
 
 **Quick Start: Data Download**
 
-`python prepare_data.py --split-file omg_TrainVideos.csv --target-dir train`
+`python prepare_data.py --split-file omg_TrainVideos.csv --target-dir train` </br>
 `python prepare_data.py --split-file omg_TestVideos_WithLabels.csv --target-dir test`
 
 **Organization**
