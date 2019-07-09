@@ -5,6 +5,7 @@ import sys
 import subprocess
 import datetime
 
+lastFailedLink = "" #Keep track of the last failed link
 
 def get_formatted_time(seconds):
     return str(datetime.timedelta(seconds=seconds))
@@ -17,6 +18,9 @@ def get_formatted_time(seconds):
 #    return "{:02}:{:02}:{:02}.{:03}".format(hour, minute, second, microsecond)
 
 def dl_youtube(link, target_file):
+    global lastFailedLink
+    if lastFailedLink == link: #Don't try to get a video again if it failed last time
+        return False
     p = subprocess.Popen(["youtube-dl",
                           "-f", "best",
                           "--merge-output-format", "mp4",
@@ -27,12 +31,17 @@ def dl_youtube(link, target_file):
                           '--write-annotations',
                           '--prefer-ffmpeg',
                           link,
-                          '-o', target_file],
-                         )
+                          '-o', target_file]
+                        )
     out, err = p.communicate()
 
-def prepare_data(file, target_dir):
+    if not os.path.exists(target_file):
+        print ("Video not available - skipping: ", link)
+        lastFailedLink = link
+        return False
+    return True
 
+def prepare_data(file, target_dir):
     temp_directory = os.path.abspath(os.path.join(target_dir, "youtube_videos_temp"))
     if not os.path.exists(temp_directory):
         os.makedirs(temp_directory)
@@ -53,11 +62,14 @@ def prepare_data(file, target_dir):
                 result_filename = os.path.abspath(os.path.join(result_dir, utterance))
                 #dl video with youtube-dl
 
+                result = True
+
                 target_file = os.path.abspath(os.path.join(temp_directory, video + ".mp4"))
                 if not os.path.exists(target_file):
-                    dl_youtube(link, target_file)
+                    result = dl_youtube(link, target_file)
 
-                p = subprocess.call(["ffmpeg",
+                if result:
+                    p = subprocess.call(["ffmpeg",
                                      "-y",
                                      "-i", target_file,
                                      "-ss", get_formatted_time(float(start)),
@@ -68,7 +80,6 @@ def prepare_data(file, target_dir):
                                      '-strict', '-2',
                                      result_filename],
                                     )
-
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -83,5 +94,5 @@ if __name__ == "__main__":
         os.makedirs(opt.target_dir)
     else:
         print("Target dir already exists.")
-
+        
     prepare_data(opt.split_file, opt.target_dir)

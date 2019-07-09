@@ -2,6 +2,11 @@
 
 Website: https://www2.informatik.uni-hamburg.de/wtm/omgchallenges/omg_emotion.html
 
+**Quick Start: Data Download**
+
+`python prepare_data.py --split-file omg_TrainVideos.csv --target-dir train`
+`python prepare_data.py --split-file omg_TestVideos_WithLabels.csv --target-dir test`
+
 **Organization**
 
 Pablo Barros, University of Hamburg, Germany </br>
