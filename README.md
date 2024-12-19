@@ -155,7 +155,7 @@ Final Results: https://www2.informatik.uni-hamburg.de/wtm/omgchallenges/omg_emot
 
 **License**
 
-This corpus is distributed under the Creative Commons CC BY-NC-SA 3.0 DE license. If you use this corpus, you have to agree with the following itens:
+This corpus is distributed under the Creative Commons CC BY-NC-SA 3.0 DE license. If you use this corpus, you have to agree with the following items:
 
 - To cite our reference in any of your papers that make any use of the database. 
 - The references are provided at the end of this page.
@@ -165,8 +165,7 @@ This corpus is distributed under the Creative Commons CC BY-NC-SA 3.0 DE license
 
 **Access do the dataset**
 
-If you are having problems downloading the videos of the dataset, please send an e-mail to: barros@informatik.uni-hamburg.de
-
+The dataset contains links to youtube videos, but not the videos themselves. Some of the videos may not be available anymore.
 
 **References**
 
@@ -190,6 +189,4 @@ doi={10.1109/IJCNN.2018.8489099}
 **More information** 
 
 - You can access a detailed information about an early version of the dataset here: https://arxiv.org/abs/1803.05434
-- You can also find usefull information here: https://www2.informatik.uni-hamburg.de/wtm/OMG-EmotionChallenge/
-
-For more informations: barros@informatik.uni-hamburg.de
+- You can also find useful information here: https://www2.informatik.uni-hamburg.de/wtm/OMG-EmotionChallenge/
